@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  a {
+    height: 30px; 
+    width: 100px; 
+    text-decoration: none; 
+    color: white; 
+    font-size: 35px; 
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
   }
-  to {
-    transform: rotate(360deg);
+
+  
+  .nav, .name {
+    background: url('https://cdn.pixabay.com/index/2023/10/30/03-25-44-707_1440x550.jpg') center/cover;
+    color: white;
   }
-}
+  
+  .nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    background-color: #333;
+  }
+  
+  .nav h1 {
+    margin: 0;
+  }
+  
+  .nav select {
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 600px;
+  }
+  
+  .nav i {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .nav h4 {
+    margin: 0;
+    cursor: pointer;
+  }
+  .upload-container {
+    background-color:green; 
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 25px; 
+  }
+  
+  .upload-container h4 {
+    margin: 0;
+  }
+  
+  
+  .name {
+    height: 300px;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .secimg {
+    margin: 20px;
+  }
+  
+  .secimg img {
+    width: 100%;
+    height: auto;
+    
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav select, .nav i, .upload-container {
+      margin: 10px 0;
+    }
+  
+    .upload-container {
+      margin-right: 0;
+    }
+  
+    input[type="text"] {
+      width: 80%;
+    }
+  }
